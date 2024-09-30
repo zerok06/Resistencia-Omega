@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"alexia_reyes",
-    "path":"sprites/alexia_reyes/alexia_reyes.yy",
+    "name":"sprite_alexia_stop",
+    "path":"sprites/sprite_alexia_stop/sprite_alexia_stop.yy",
   },
   "spriteMaskId":null,
   "visible":true,
