@@ -40,6 +40,10 @@ if place_meeting(x, y + yspd ,oWall){
 }
 
 
+// profundidad 
+depth = -bbox_bottom
+
+
 x += xspd
 y += yspd
 
@@ -48,12 +52,14 @@ y += yspd
 // punteria de jugador
 #region
 centerY = y + centerYoffset
-aimDir = point_direction(0,centerY, mouse_x, mouse_y)
+aimDir = point_direction(x,centerY, mouse_x, mouse_y)
 
 #endregion
 
 // configuracion de sprites
 #region
+
+
 	face = round(aimDir/90)
 	if face == 4 {face=0}
 	sprite_index = sprite[face]
