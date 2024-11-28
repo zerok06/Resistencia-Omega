@@ -13,6 +13,8 @@ yspd = 0
 centerYoffset = -5
 centerY = y + centerYoffset
 
+weaponOffsetDist = 5
+
 
 aimDir = 0
 
