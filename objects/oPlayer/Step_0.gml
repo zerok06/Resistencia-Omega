@@ -7,6 +7,11 @@ var press_left = keyboard_check(ord("A"))
 var press_up = keyboard_check(ord("W"))
 var press_down = keyboard_check(ord("S"))
 
+// obtener eventos de mouse
+
+var press_mouse_left = mouse_check_button(mb_left)
+
+
 
 // movimiento de jugador
 
@@ -56,6 +61,9 @@ aimDir = point_direction(x,centerY, mouse_x, mouse_y)
 
 #endregion
 
+// obtener dano
+get_damaged(oDamagePlayer, true)
+
 // configuracion de sprites
 #region
 
@@ -72,4 +80,36 @@ aimDir = point_direction(x,centerY, mouse_x, mouse_y)
 
 #endregion
 
+
+// Dispara balas
+
+if shootTimer > 0 {
+	shootTimer--
+}
+
+if press_mouse_left && shootTimer <= 0 {
+	
+	shootTimer = weapon.cooldown
+	
+	var xOffset = lengthdir_x(weapon.length, aimDir)
+	var yOffset = lengthdir_y(weapon.length, aimDir)
+
+	var _spread = weapon.spread
+	var _spreadDiv = _spread / max(weapon.bulletNum - 1, 1)
+	
+	
+	// generacion de multipleas balas
+	
+	for (var i=0; i< weapon.bulletNum ;i++){
+		var _bala = instance_create_depth(x + xOffset ,  centerY + yOffset,  depth - 100, weapon.bulletObj)
+	
+		with(_bala){
+			dir = other.aimDir - _spread/2 + _spreadDiv * i
+		}
+	
+	}
+	
+	
+	
+}
 
