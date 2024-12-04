@@ -42,7 +42,7 @@ array_push(global.PlayerWeapons, global.WeaponList.rifleriel)
 
 
 
-selectedWeapon = 2
+selectedWeapon = 1
 
 weapon = global.PlayerWeapons[selectedWeapon]
 

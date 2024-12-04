@@ -98,12 +98,20 @@ for (var i = 0; i < _damageListSize; i++){
 		_damageListSize--
 	}
 }
+
+
+
 }
+
+//hp = clamp(hp, 0, maxHp)
 
 
 }
 
 function get_damaged_create (_hp = 10, _iframes = false){
+	
+	maxHp = _hp
+	
 	hp = _hp
 	
 	if _iframes == true {
