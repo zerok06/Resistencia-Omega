@@ -2,14 +2,14 @@
 #region
 // obtener eventos de teclado
 
-var press_right = keyboard_check(ord("D"))
-var press_left = keyboard_check(ord("A"))
-var press_up = keyboard_check(ord("W"))
-var press_down = keyboard_check(ord("S"))
+var press_right = global.press_right
+var press_left = global.press_left
+var press_up = global.press_up
+var press_down = global.press_down
 
 // obtener eventos de mouse
 
-var press_mouse_left = mouse_check_button(mb_left)
+var press_mouse_left = global.press_mouse_left
 
 
 
@@ -64,6 +64,9 @@ aimDir = point_direction(x,centerY, mouse_x, mouse_y)
 // obtener dano
 get_damaged(oDamagePlayer, true)
 
+
+
+
 // configuracion de sprites
 #region
 
@@ -113,3 +116,12 @@ if press_mouse_left && shootTimer <= 0 {
 	
 }
 
+if hp <= 0 {
+	
+	//agregar la pesnatan de gameover
+	instance_create_depth(0,0,-10000, oGameOverScreen)
+	
+	instance_destroy()
+	exit
+	
+}

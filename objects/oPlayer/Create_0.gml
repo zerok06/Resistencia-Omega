@@ -1,5 +1,5 @@
 // confuguracion de dano
-get_damaged_create(20, true)
+get_damaged_create(1, true)
 
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
@@ -42,7 +42,7 @@ array_push(global.PlayerWeapons, global.WeaponList.rifleriel)
 
 
 
-selectedWeapon = 1
+selectedWeapon = 2
 
 weapon = global.PlayerWeapons[selectedWeapon]
 

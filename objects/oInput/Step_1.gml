@@ -1,0 +1,5 @@
+global.press_right = keyboard_check(ord("D"))
+global.press_left = keyboard_check(ord("A"))
+global.press_up = keyboard_check(ord("W"))
+global.press_down = keyboard_check(ord("S"))
+global.press_mouse_left = mouse_check_button(mb_left)
