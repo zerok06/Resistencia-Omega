@@ -11,6 +11,28 @@ var press_down = global.press_down
 
 var press_mouse_left = global.press_mouse_left
 
+//cambiar arma
+
+var press_mouse_right = global.press_mouse_right
+
+//
+var escape_press = global.escape_key_press
+
+// menu de pausa
+if escape_press {
+
+	if !instance_exists(oPauseMenu) {
+		instance_create_depth(0,0,0, oPauseMenu)
+	} else {
+		instance_destroy(oPauseMenu)
+	}
+
+}
+
+
+// pausar personahe
+
+if pause_screen() { exit }
 
 
 // movimiento de jugador
@@ -62,9 +84,18 @@ aimDir = point_direction(x,centerY, mouse_x, mouse_y)
 #endregion
 
 // obtener dano
-get_damaged(oDamagePlayer, true)
 
 
+if get_damaged(oDamagePlayer, true) {
+	create_screen_pause(20)
+	screen_shake(10)
+}
+
+if selectedWeapon != -1 {
+
+	weapon = global.PlayerWeapons[selectedWeapon]
+
+}
 
 
 // configuracion de sprites
@@ -83,16 +114,32 @@ get_damaged(oDamagePlayer, true)
 
 #endregion
 
+#region
+
+
+var _playerWeapons = global.PlayerWeapons
+if press_mouse_right {
+
+	selectedWeapon++
+	if selectedWeapon >= array_length(_playerWeapons) { selectedWeapon = 0 }
+
+}
+
+
+#endregion
+
 
 // Dispara balas
-
+if weapon != noone {
 if shootTimer > 0 {
 	shootTimer--
 }
 
 if press_mouse_left && shootTimer <= 0 {
-	
+
 	shootTimer = weapon.cooldown
+	screen_shake(10)
+
 	
 	var xOffset = lengthdir_x(weapon.length, aimDir)
 	var yOffset = lengthdir_y(weapon.length, aimDir)
@@ -111,11 +158,12 @@ if press_mouse_left && shootTimer <= 0 {
 		}
 	
 	}
-	
+		screen_shake(10)
+
 	
 	
 }
-
+}
 if hp <= 0 {
 	
 	//agregar la pesnatan de gameover

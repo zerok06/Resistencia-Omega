@@ -1,3 +1,6 @@
+if pause_screen() {exit}
+
+
 switch (state) {
 
 	case 0:

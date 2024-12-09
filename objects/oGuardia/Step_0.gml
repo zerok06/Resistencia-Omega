@@ -1,4 +1,6 @@
 
+if pause_screen() {exit}
+
 
 // cambiar de estado
 

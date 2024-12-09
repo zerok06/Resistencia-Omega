@@ -21,7 +21,6 @@ draw_sprite_ext(weapon.sprite, 0 , x + _xoffset, centerY + _yoffset,1,_armaYscl,
 	
 	
 function get_damaged (_damageEnemy, _iframes = false){
-
 if _iframes == true and iframeTimer > 0 {
 	iframeTimer--
 	
@@ -33,14 +32,14 @@ if _iframes == true and iframeTimer > 0 {
 		}
 	}
 	
-	exit
+	return false
 }
 
 
 if _iframes == true {
 	image_alpha = 1
 }
-
+var _hitConfirm = false
 if place_meeting(x,y, _damageEnemy){
 
 
@@ -52,7 +51,7 @@ if place_meeting(x,y, _damageEnemy){
 	instance_place_list(x, y, _damageEnemy, _instlist, false)
 	
 	var _listsize = ds_list_size(_instlist)
-	var _hitConfirm = false
+	
 	
 	for (var i = 0 ; i < _listsize; i ++){
 		
@@ -104,7 +103,7 @@ for (var i = 0; i < _damageListSize; i++){
 }
 
 //hp = clamp(hp, 0, maxHp)
-
+return _hitConfirm
 
 }
 
@@ -125,5 +124,41 @@ function get_damaged_create (_hp = 10, _iframes = false){
 
 function get_damage_clean(){
 	ds_list_destroy(damageList)
+}
+
+
+
+function pause_screen() {
+	
+	if instance_exists(oScreenPause) {
+		image_speed = 0
+		return true
+	} else {
+		image_speed = 1
+		return false
+	}
+
+}
+
+function create_screen_pause (_time= 3){
+
+	var _inst = instance_create_depth(0,0,0, oScreenTimer)
+	
+	with(_inst){
+	
+		timer = _time
+	
+	}
+
+}
+
+
+function screen_shake (_amount=4) {
+	_amount *= 0.5
+	with(oCamera) {
+		xShakeAmount = _amount
+		yShakeAmount = _amount
+	}
+
 }
 
