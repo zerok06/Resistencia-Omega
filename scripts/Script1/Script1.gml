@@ -162,3 +162,15 @@ function screen_shake (_amount=4) {
 
 }
 
+
+function animate_fvx (_sprite, _x, _y, _depth, _rot = 0) {
+
+	with (instance_create_depth(_x,_y,_depth, Object37)){
+	
+		sprite_index = _sprite
+		image_angle = _rot
+	
+	}
+
+}
+

@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"Object37",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oWall",
+  "name":"Object37",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"balas",
+    "path":"folders/Objetos/armas/balas.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -109,7 +109,7 @@ if dir > 90 and dir < 270 {
 	face = 1
 }
 
-image_xscale = face
+image_xscale = -face
 
 
 // colisiones

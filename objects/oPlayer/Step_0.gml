@@ -118,7 +118,7 @@ if selectedWeapon != -1 {
 
 
 var _playerWeapons = global.PlayerWeapons
-if press_mouse_right {
+if press_mouse_right and array_length(_playerWeapons) > 0 {
 
 	selectedWeapon++
 	if selectedWeapon >= array_length(_playerWeapons) { selectedWeapon = 0 }
@@ -136,16 +136,22 @@ if shootTimer > 0 {
 }
 
 if press_mouse_left && shootTimer <= 0 {
-
+	
 	shootTimer = weapon.cooldown
 	screen_shake(10)
-
+	
 	
 	var xOffset = lengthdir_x(weapon.length, aimDir)
 	var yOffset = lengthdir_y(weapon.length, aimDir)
-
+	
 	var _spread = weapon.spread
 	var _spreadDiv = _spread / max(weapon.bulletNum - 1, 1)
+	
+	var _weaponTipX = x + xOffset
+	var _weaponTipY = centerY + yOffset
+	
+	// animacion de disparo
+	animate_fvx(sAnimateEnd, _weaponTipX, _weaponTipY, depth-10, aimDir)
 	
 	
 	// generacion de multipleas balas
@@ -159,9 +165,6 @@ if press_mouse_left && shootTimer <= 0 {
 	
 	}
 		screen_shake(10)
-
-	
-	
 }
 }
 if hp <= 0 {
