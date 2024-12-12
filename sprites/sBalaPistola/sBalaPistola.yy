@@ -19,6 +19,8 @@
   "height":8,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"b27d0cc6-1d82-4345-a42b-cada645092af","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"b27d0cc6-1d82-4345-a42b-cada645092af","opacity":10.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"65b135c0-4926-4386-895c-7dc1d45bbad4","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"65b135c0-4926-4386-895c-7dc1d45bbad4","opacity":30.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"8e6d0c4e-afab-438b-9ab8-4de400ec2d88","blendMode":0,"displayName":"default","isLocked":false,"name":"8e6d0c4e-afab-438b-9ab8-4de400ec2d88","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sBalaPistola",

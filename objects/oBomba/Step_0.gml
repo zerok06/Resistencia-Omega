@@ -13,12 +13,17 @@ if hp <= 0 {
 	
 	//animar la explosion
 	
-	instance_create_depth(x,y, -3000, oBombaAnimate)
+	var _bomba = instance_create_depth(x,y, -3000, oBombaAnimate)
+	_bomba.image_xscale = 2.5
+	_bomba.image_yscale = 2.5
+
 	
 	
 	// screen pause
 	
-	create_screen_pause(100)
+	create_screen_pause(10)
+	oSonidoExplosiones._soundInst = sndBomba
+	oSonidoExplosiones._play = true
 	
 	
 	instance_destroy()

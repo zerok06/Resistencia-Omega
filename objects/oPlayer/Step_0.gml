@@ -89,6 +89,8 @@ aimDir = point_direction(x,centerY, mouse_x, mouse_y)
 if get_damaged(oDamagePlayer, true) {
 	create_screen_pause(20)
 	screen_shake(10)
+	oSonidoAlexia._soundInst = sndDamage
+	oSonidoAlexia._play = true
 }
 
 if selectedWeapon != -1 {
@@ -151,7 +153,7 @@ if press_mouse_left && shootTimer <= 0 {
 	var _weaponTipY = centerY + yOffset
 	
 	// animacion de disparo
-	animate_fvx(sAnimateEnd, _weaponTipX, _weaponTipY, depth-10, aimDir)
+	animate_fvx(sDisparo, _weaponTipX, _weaponTipY, depth-10, aimDir)
 	if weapon.sound != noone {
 	
 		oSonidoArma._soundInst = weapon.sound
@@ -161,12 +163,13 @@ if press_mouse_left && shootTimer <= 0 {
 	
 	
 	// generacion de multipleas balas
-	
+	var _damage_weapon = weapon.damage
 	for (var i=0; i< weapon.bulletNum ;i++){
 		var _bala = instance_create_depth(x + xOffset ,  centerY + yOffset,  depth - 100, weapon.bulletObj)
-	
+		
 		with(_bala){
 			dir = other.aimDir - _spread/2 + _spreadDiv * i
+			damage = _damage_weapon
 		}
 	
 	}

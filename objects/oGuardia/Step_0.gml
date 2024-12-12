@@ -52,7 +52,8 @@ switch (state){
 	if shootTimer == 1 {
 	
 		bulletInst = instance_create_depth(x + bulletXoff*face, y + bulletYoff, depth, oGuardiaBullet)
-	
+		oSonidoEnemigos._soundInst = sndRifleAutomatico
+		oSonidoEnemigos._play = true
 	}
 	
 	// cambiar orientacion de bala
@@ -61,7 +62,8 @@ switch (state){
 	
 		bulletInst.x = x + bulletXoff * face
 		bulletInst.y = y + bulletYoff
-  
+  		bulletInst.image_angle = dir
+
 	
 	}
 	

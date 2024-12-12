@@ -1,6 +1,6 @@
 event_inherited()
 
-hp = 40
+hp = 20
 
 spd  = 0
 chaseSpd = 0.5

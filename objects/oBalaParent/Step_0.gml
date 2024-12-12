@@ -12,6 +12,7 @@ y += yspd
 //confirmacion de eliminacion
 if hitConfirm == true and enemyDestroy == true {
 	destroy = true
+	
 }
 
 
@@ -19,7 +20,7 @@ if hitConfirm == true and enemyDestroy == true {
 
 if destroy == true{
 	instance_destroy()  
-	animate_fvx(sAnimateEnd, x, y, depth)
+	animate_fvx(sImpacto, x, y, depth)
 }
 
 if place_meeting(x + xspd, y, oWall){
