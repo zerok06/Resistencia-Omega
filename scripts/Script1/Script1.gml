@@ -174,3 +174,9 @@ function animate_fvx (_sprite, _x, _y, _depth, _rot = 0) {
 
 }
 
+function play_sound (_sound, _vol) {
+
+	_soundInst = audio_play_sound(_sound, 8, false)
+	audio_sound_gain(_soundInst, _vol, 0)
+
+}

@@ -152,6 +152,12 @@ if press_mouse_left && shootTimer <= 0 {
 	
 	// animacion de disparo
 	animate_fvx(sAnimateEnd, _weaponTipX, _weaponTipY, depth-10, aimDir)
+	if weapon.sound != noone {
+	
+		oSonidoArma._soundInst = weapon.sound
+		oSonidoArma._play = true
+	
+	}
 	
 	
 	// generacion de multipleas balas

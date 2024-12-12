@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"explosion_round_3",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.097143,
+  "name":"explosion_round_3",
+  "parent":{
+    "name":"explosions",
+    "path":"folders/Sonidos/explosions.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"explosion_round_3.mp3",
+  "type":0,
+  "volume":1.0,
+}

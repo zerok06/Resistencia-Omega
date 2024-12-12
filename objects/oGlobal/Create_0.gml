@@ -1,0 +1,1 @@
+global.soundVolumen = 100/100

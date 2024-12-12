@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"ui_game_prepare",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.835918,
+  "name":"ui_game_prepare",
+  "parent":{
+    "name":"ui",
+    "path":"folders/Sonidos/ui.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ui_game_prepare.mp3",
+  "type":0,
+  "volume":1.0,
+}

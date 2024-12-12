@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"physics_crate_open_2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.679184,
+  "name":"physics_crate_open_2",
+  "parent":{
+    "name":"crate",
+    "path":"folders/Sonidos/physics/crate.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"physics_crate_open_2.mp3",
+  "type":0,
+  "volume":1.0,
+}

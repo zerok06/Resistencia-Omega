@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"ui_game_start",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.8,
+  "name":"ui_game_start",
+  "parent":{
+    "name":"ui",
+    "path":"folders/Sonidos/ui.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ui_game_start.mp3",
+  "type":0,
+  "volume":1.0,
+}
