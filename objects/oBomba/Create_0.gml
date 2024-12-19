@@ -1,4 +1,4 @@
-get_damaged_create(3)
+get_damaged_create(20)
 
 
 depth  = -bbox_top

@@ -33,6 +33,8 @@ sprite_index = sprite[face]
 
 
 selectedWeapon = -1
+
+
 weapon = noone
 
 
@@ -40,4 +42,13 @@ weapon = noone
 
 // informacion de arma
 shootTimer = 0
+
+
+// modulos multiplicadores
+modificate = false
+balas = 1
+damageIncrement = 1
+spread = 1
+
+
 

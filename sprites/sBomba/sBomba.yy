@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sBomba",
   "bboxMode":2,
-  "bbox_bottom":30,
+  "bbox_bottom":29,
   "bbox_left":6,
   "bbox_right":25,
   "bbox_top":3,

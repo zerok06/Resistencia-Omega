@@ -10,3 +10,7 @@ global.press_mouse_right = 0
 
 global.escape_key_press = 0
 
+
+// dialogs
+global.accept_key = 0
+

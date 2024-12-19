@@ -140,6 +140,27 @@ function pause_screen() {
 
 }
 
+function pause_screen_now (){
+
+	if !instance_exists(oScreenPause) {
+	
+		instance_create_depth(x,y,0,oScreenPause)
+	
+	} 
+
+}
+
+function continue_screen_now () {
+
+	if instance_exists(oScreenPause) {
+	
+		instance_destroy(oScreenPause)
+	
+	}
+
+}
+
+
 function create_screen_pause (_time= 3){
 
 	var _inst = instance_create_depth(0,0,0, oScreenTimer)

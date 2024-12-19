@@ -1,4 +1,4 @@
-function create_weapon(_damage=1,_weapon, _cooldown=1, _bullet, _soundInst= noone, _bulletNum= 1, _spread = 0) constructor{
+function create_weapon(_damage=1,_weapon, _cooldown=1, _bullet, _soundInst= noone, _bulletNum= 1, _spread = 1) constructor{
 	sprite = _weapon
 	length= sprite_get_bbox_right(_weapon) - sprite_get_xoffset(_weapon);
 	bulletObj = _bullet 
@@ -20,6 +20,7 @@ global.WeaponList = {
 	escopeta: new create_weapon(1, sEscopeta, 25, oBalaEscopeta,sndEscopeta, 10, 45),
 	electrica: new create_weapon(4,sElectrica, 100, oBalaElectrica, sndElectrica),
 	rifleriel: new create_weapon(8, sRifleRiel, 15, oBalaRifleRiel, sndRifleRiel),
-	rifleautomatica: new create_weapon(2, sRifleAutomatica, 5, oBalaRifleAutomatica, sndRifleAutomatico),
+	rifleautomatica: new create_weapon(2, sRifleAutomatica, 10, oBalaRifleAutomatica, sndRifleAutomatico),
 	bazuca: new create_weapon(8, sBazuca, 100, oBalaBazuca, sndBazuca),
 }
+

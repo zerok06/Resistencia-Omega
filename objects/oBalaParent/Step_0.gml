@@ -23,9 +23,10 @@ if destroy == true{
 	animate_fvx(sImpacto, x, y, depth)
 }
 
-if place_meeting(x + xspd, y, oWall){
+if place_meeting(x , y , oWall){
 	destroy = true
 }
+
 
 
 if point_distance(xstart, ystart, x, y) > max_distance{

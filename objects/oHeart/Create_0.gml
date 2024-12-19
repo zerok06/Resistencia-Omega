@@ -1,7 +1,7 @@
 depth = -y
 
 
-heal = 4
+heal = 1
 
 
 floatDir = 0

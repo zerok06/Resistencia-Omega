@@ -21,4 +21,7 @@ draw_set_valign(fa_middle)
 draw_set_alpha(alpha)
 draw_set_font(f8Bit)
 draw_text_transformed(_camX + _camW / 2, _camY + _camH / 2, "Game Over", 3, 3, 0)
+draw_text_transformed(_camX + _camW / 2, _camY + _camH / 2 + 30, "Press -Esc- return Home", 0.7, 0.7, 0)
+draw_text_transformed(_camX + _camW / 2, _camY + _camH / 2 + 40, "Press -Enter- restart level", 0.7, 0.7, 0)
+
 draw_set_alpha(1)

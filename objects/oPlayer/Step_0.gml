@@ -146,8 +146,8 @@ if press_mouse_left && shootTimer <= 0 {
 	var xOffset = lengthdir_x(weapon.length, aimDir)
 	var yOffset = lengthdir_y(weapon.length, aimDir)
 	
-	var _spread = weapon.spread
-	var _spreadDiv = _spread / max(weapon.bulletNum - 1, 1)
+	var _spread = weapon.spread * spread
+	var _spreadDiv = _spread / max(weapon.bulletNum * balas - 1, 1)
 	
 	var _weaponTipX = x + xOffset
 	var _weaponTipY = centerY + yOffset
@@ -163,8 +163,8 @@ if press_mouse_left && shootTimer <= 0 {
 	
 	
 	// generacion de multipleas balas
-	var _damage_weapon = weapon.damage
-	for (var i=0; i< weapon.bulletNum ;i++){
+	var _damage_weapon = weapon.damage * damageIncrement
+	for (var i=0; i< weapon.bulletNum * balas ;i++){
 		var _bala = instance_create_depth(x + xOffset ,  centerY + yOffset,  depth - 100, weapon.bulletObj)
 		
 		with(_bala){
@@ -184,4 +184,13 @@ if hp <= 0 {
 	instance_destroy()
 	exit
 	
+}
+
+// correjir la vida maxima
+
+
+if hp >= maxHp {
+
+	maxHp = hp
+
 }

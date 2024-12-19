@@ -1,0 +1,1 @@
+weapon = global.WeaponList.electrica

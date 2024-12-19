@@ -1,0 +1,1 @@
+global.font_main = f8Bit

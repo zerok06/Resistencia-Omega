@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sHeart",
   "bboxMode":0,
-  "bbox_bottom":7,
+  "bbox_bottom":9,
   "bbox_left":0,
-  "bbox_right":7,
+  "bbox_right":9,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":8,
+  "height":10,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"6fd1ed7e-ddeb-40bb-b17f-95cb3e64c083","blendMode":0,"displayName":"default","isLocked":false,"name":"6fd1ed7e-ddeb-40bb-b17f-95cb3e64c083","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":8,
+  "width":10,
 }
