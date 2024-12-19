@@ -2,7 +2,7 @@ function src_game_text(_id){
 	
 	switch (_id) {
 	
-		case "elias_1":
+		case "marcus_1":
 			src_text("Como estas", "alexia", -1)
 			src_text("soy")
 			src_text("Elias", "alexia-inv", 1)
@@ -16,12 +16,6 @@ function src_game_text(_id){
 			case "elias_1_no":
 				src_text("No")
 				break
-		
-		case "marcus_1":
-			src_text("Hola")
-			src_text("soy")
-			src_text("Marcus")
-			break
 		
 		case "vera_1":
 			src_text("Hola")

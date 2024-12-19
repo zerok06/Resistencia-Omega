@@ -1,4 +1,4 @@
-
+image_alpha = 0
 if place_meeting(x ,y ,oPlayer) and state == false {
 	
 		create_dialog(text_id)
