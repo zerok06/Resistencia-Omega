@@ -3,24 +3,23 @@ function src_game_text(_id){
 	switch (_id) {
 	
 		case "marcus_1":
-			src_text("Como estas", "alexia", -1)
-			src_text("soy")
+			src_text("Hola, bienvenida a la resistencia", "alexia", -1)
+			src_text("Soy marcus en encargado de este lugar, sientete a gusto con nosotros")
 			src_text("Elias", "alexia-inv", 1)
-				src_option("Yeah", "elias_1_yes")
-				src_option("Noo", "elias_1_no")
+				src_option("Hola", "alexia_1_yes")
+				src_option("A hola, jaja", "alexia_1_no")
 			break
 		
-			case "elias_1_yes":
-				src_text("Yes")
+			case "alexia_1_yes":
+				src_text("Hola, gracias")
 				break
-			case "elias_1_no":
-				src_text("No")
+			case "alexia_1_no":
+				src_text("A hola, jaja.")
 				break
 		
 		case "vera_1":
-			src_text("Hola")
-			src_text("soy")
-			src_text("Vera")
+			src_text("Hey ale !!, escapa de la fabrica", 1)
+			src_text("Recuerda usar tu arcenal, emplea los potenciadores de armas.", 1)
 			break
 		
 		case "aldric_1":
